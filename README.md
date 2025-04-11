@@ -23,15 +23,18 @@
 1. Клонировать репозиторий:
    ```
    git clone https://github.com/ваш-username/mini-todo-list.git
+   ```
 
 2. Установить зависимости:
-
+```
 cd mini-todo-list
 npm install
-
+```
 3. Запустить приложение:
-
+```
 npm run dev
-
-4. Открыть в браузере: http://localhost:3000
+```
+4. Открыть в браузере: 
+```
+http://localhost:3000
 ```
