@@ -1,0 +1,67 @@
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.taskItem.completed {
+    opacity: 0.7;
+}
+
+.taskItem.completed .taskText {
+    text-decoration: line-through;
+}
+
+.taskContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.taskCheckbox {
+    margin-right: 10px;
+}
+
+.taskText {
+    flex: 1;
+}
+
+.priorityBadge {
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: #ff5252;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.editInput {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.taskMeta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.taskDate {
+    font-size: 12px;
+    color: #777;
+}
