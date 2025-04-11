@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Priority, Task } from '../../types';
+import { PRIORITY_COLORS } from '../../constants';
+import { Task } from '../../types';
 
 import cn from 'classnames';
 import styles from './TaskItem.module.scss';
@@ -10,12 +11,6 @@ interface Props {
   onEdit: (id: string, text: string) => void;
   onDelete: (id: string) => void;
 }
-
-const priorityColors: Record<Priority, string> = {
-  high: 'red',
-  medium: 'orange',
-  low: 'green',
-};
 
 const TaskItem = ({ task, onToggle, onEdit, onDelete }: Props) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -57,7 +52,7 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete }: Props) => {
         )}
         <span 
           className={styles.priorityBadge} 
-          style={{ backgroundColor: priorityColors[task.priority] }}
+          style={{ backgroundColor: PRIORITY_COLORS[task.priority] }}
         >
           {task.priority}
         </span>
