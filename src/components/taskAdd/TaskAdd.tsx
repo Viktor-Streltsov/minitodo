@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Priority } from '../../types';
+import { OPTION_STATUS } from '../../constants';
 
 import styles from './TaskAdd.module.scss';
 
@@ -33,9 +34,9 @@ const AddTask = ({ onAdd }: Props) => {
         onChange={(e) => setPriority(e.target.value as Priority)}
         className={styles.prioritySelect}
       >
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
+        {OPTION_STATUS.map(item => (
+          <option key={item.id} value={item.value}>{item.title}</option>
+        ))}
       </select>
       <button type="submit" className={styles.addBtn}>
         Add

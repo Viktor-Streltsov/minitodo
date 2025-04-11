@@ -1,3 +1,4 @@
+import { OPTION_SORT } from '../../constants';
 import { SortField } from '../../types';
 
 import styles from './TaskSort.module.scss';
@@ -24,11 +25,10 @@ const SortTasks = ({
         onChange={(e) => onChangeSortField(e.target.value as SortField)}
         className={styles.sortSelect}
       >
-        <option value="createdAt">Date</option>
-        <option value="completed">Status</option>
-        <option value="priority">Priority</option>
+         {OPTION_SORT.map(item => (
+                  <option key={item.id} value={item.value}>{item.title}</option>
+                ))}
       </select>
-      
       <button 
         onClick={onToggleSortOrder}
         className={styles.sortOrderBtn}

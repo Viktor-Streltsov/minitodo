@@ -70,8 +70,8 @@ const useTodos = () => {
     return true;
   });
 
+  // Сортировка по дате создания
   const sortedTasks = [...filteredTasks].sort((a, b) => {
-    // Сортировка по дате создания
     if (sortField === 'createdAt') {
       return sortOrder === 'asc' 
         ? a.createdAt.getTime() - b.createdAt.getTime()
