@@ -1,40 +1,39 @@
 # Mini Todo List
 
-Простое одностраничное приложение для управления задачами, созданное на React и TypeScript.
+A simple single-page application for task management built with React and TypeScript.
 
-## Функционал
+## Features
 
-- Добавление новых задач с приоритетом (высокий, средний, низкий)
-- Отметка задач как выполненных
-- Редактирование текста задачи (двойной клик)
-- Удаление задач
-- Фильтрация задач: все/активные/выполненные
-- Сортировка по дате, статусу и приоритету
-- Сохранение задач в localStorage
+- Add new tasks with priority (high, medium, low)
+- Mark tasks as completed
+- Edit task text (double-click)
+- Delete tasks
+- Filter tasks: all / active / completed
+- Sort by date, status, and priority
+- Save tasks to localStorage
 
-## Технологии
+## Technologies
 
 - React 18
 - TypeScript
-- SCSS (модули)
+- SCSS (modules)
 
-## Установка и запуск
+## Installation and Launch
 
-1. Клонировать репозиторий:
+1. Clone the repository:
 ```
    git clone https://github.com/ваш-username/mini-todo-list.git
 ```
 
-2. Установить зависимости:
+2. Install dependencies:
 ```
-   cd mini-todo-list
    npm install
 ```
-3. Запустить приложение:
+3. Start the application:
 ```
-   npm run dev
+   npm start
 ```
-4. Открыть в браузере: 
+4. Open in your browser:
 ```
    http://localhost:3000
 ```
